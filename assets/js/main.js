@@ -5,7 +5,10 @@ const menu_button = document.querySelector('.menu_mobile');
 menu_button.addEventListener('click',()=>{
   document.body.classList.toggle('hiden');
   document.querySelector(".container_menu").classList.toggle('visibal_menu')
+  menu_button.classList.toggle('close')
 })
+
+
 window.addEventListener("scroll", () => {
     const scrolledPixels =
       window.scrollY ||
