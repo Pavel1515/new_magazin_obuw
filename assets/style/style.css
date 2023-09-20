@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic");
 /* Сброс стилей */
 * {
   margin: 0;
@@ -13,74 +14,72 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 100rem;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 /* Хедер */
-.menu_mobile{
+.menu_mobile {
   display: none;
-
 }
-.close{
+.close {
   display: block;
   position: relative;
-  transform: translateY(3px);
-  
+  transform: translateY(0.1875rem);
 }
-.menu_mobile span{
-  transition: all .4s;
+.menu_mobile span {
+  transition: all 0.4s;
 }
-.close span:nth-child(3){
+.close span:nth-child(3) {
   opacity: 0;
 }
-.close span:nth-child(2){
+.close span:nth-child(2) {
   transform: rotate(-45deg);
   bottom: 0;
-
 }
-.close span:nth-child(1){
+.close span:nth-child(1) {
   position: absolute;
   left: 0;
   transform: rotate(45deg);
   width: 100%;
 }
-.hiden{
+.hiden {
   overflow: hidden;
 }
 header {
-  max-width: 100rem;
+  max-width: 1600px;
   margin: 0 auto;
-  gap: .625rem;
+  gap: 10px;
 }
-.flex-left{
-  display: flex;justify-content: flex-end;
+.flex-left {
+  display: flex;
+  justify-content: flex-end;
 }
 .container_header {
-  padding-top: .3125rem;
-  padding-bottom: 1.5625rem;
+  padding-top: 5px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .container_logo {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background-image: url("../img/logo_obuv.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .container_menu {
-  width: calc(100% - 19.375rem);
+  width: calc(100% - 310px);
   display: flex;
   justify-content: flex-end;
 }
 .menu {
-  margin-right: 3.75rem;
+  margin-right: 60px;
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .menu .active a {
   color: #f25862;
@@ -88,7 +87,7 @@ header {
 .menu a {
   cursor: pointer;
   font-family: Montserrat;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: #444;
@@ -97,28 +96,27 @@ header {
 .menu a:hover {
   color: #f25862;
 }
-.card img{
-  width: 1.375rem;
+.card img {
+  width: 22px;
 }
-.card{
+.card {
   position: relative;
-  padding: 2px;
-  transition: all .4s;
+  padding: 0.125rem;
+  transition: all 0.4s;
   border-radius: 50%;
 }
-.card:hover{
-  
+.card:hover {
   background-color: #f25862;
-} 
-.card span{
+}
+.card span {
   position: absolute;
-  font-size: .875rem;
+  font-size: 14px;
   background-color: #616161;
   border-radius: 50%;
   color: white;
-  padding: .125rem;
-  top: -0.5rem;
-  left: .9375rem;
+  padding: 2px;
+  top: -8px;
+  left: 15px;
 }
 
 .breadcrumb ol {
@@ -127,11 +125,11 @@ header {
 }
 .breadcrumb a::after {
   content: ">";
-  margin: .3125rem;
+  margin: 5px;
   color: #999999;
 }
 .breadcrumb a {
-  font-size: .75rem;
+  font-size: 12px;
   font-family: "Open Sans";
   color: #999999;
 }
@@ -142,26 +140,23 @@ header {
   color: #999999;
 }
 
-
 /* Контент */
 
-
-
 .content {
-  margin-top: 1.25rem;
+  margin-top: 20px;
   display: flex;
-  gap: .625rem;
-  margin-bottom: 5rem;
+  gap: 10px;
+  margin-bottom: 80px;
 }
 .sidebar {
-  width: 16.875rem;
+  width: 270px;
 }
 .content_left {
   width: 100%;
 }
 aside h3 {
-  margin-top: .625rem;
-  margin-bottom: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 aside h3 span {
   color: #0f0f0f;
@@ -170,7 +165,7 @@ aside h3 span {
   line-height: 1.35;
 }
 aside li {
-  margin: 10px 10px;
+  margin: 0.625rem 0.625rem;
 }
 aside li a {
   font-family: "Open Sans";
@@ -178,7 +173,7 @@ aside li a {
   font-style: normal;
   color: #0f0f0f;
   transition: all 0.4s;
-  font-size: 1rem;
+  font-size: 16px;
 }
 aside li a:hover {
   color: #f25862;
@@ -189,17 +184,17 @@ aside li span {
 .content_left {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }
 .cart {
   cursor: pointer;
-  padding: .3125rem;
-  padding-bottom: 1.25rem;
+  padding: 5px;
+  padding-bottom: 20px;
   width: 100%;
   transition: all 0.2s;
 }
 .cart:hover {
-  box-shadow: .0625rem .0625rem .9375rem #6a6a6a;
+  box-shadow: 1px 1px 15px #6a6a6a;
 }
 
 .cart_photo {
@@ -214,7 +209,7 @@ aside li span {
 }
 .cart-title {
   font-family: Montserrat;
-  font-size: 1rem;
+  font-size: 16px;
   color: #0f0f0f;
   transition: all 0.4s;
   text-align: center;
@@ -224,51 +219,51 @@ aside li span {
 }
 .cart_footer .price {
   font-family: Montserrat;
-  font-size: 1rem;
+  font-size: 16px;
   color: #f25862;
-  margin-left: 1.25rem;
+  margin-left: 20px;
 }
 .cart_footer strike {
   color: #999999;
-  margin-right: .625rem;
+  margin-right: 10px;
 }
 /* Футер */
 footer {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #141414;
 }
 .footer_container {
   font-family: Montserrat;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
+  gap: 20px;
 }
 .footer_container h2 {
   color: white;
   font-family: Montserrat;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .footer_container p {
   color: white;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .footer_container ul {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .footer_container li {
-  border: .0625rem solid white;
-  padding: 10px 15px;
+  border: 1px solid white;
+  padding: 0.625rem 0.9375rem;
   transition: all 0.4s;
 }
 .footer_container li a {
   width: 100%;
   height: 100%;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
 
   transition: all 0.4s;
@@ -281,30 +276,30 @@ footer {
 }
 
 .first_block .logo {
-  background-image: url('../img/logo_obuv.svg');
-  width: 150px;
-  height: 150px;
+  background-image: url("../img/logo_obuv.svg");
+  width: 9.375rem;
+  height: 9.375rem;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .separator {
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
   background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .up_to_header {
   position: fixed;
   background-color: #141414;
-  width: 40px;
-  height: 40px;
-  bottom: 40px;
-  right: 22.4px;
+  width: 2.5rem;
+  height: 2.5rem;
+  bottom: 2.5rem;
+  right: 1.4rem;
   display: flex;
   justify-content: center;
-  padding: 2px;
+  padding: 0.125rem;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s;
@@ -312,86 +307,129 @@ footer {
 }
 /* Общие стили */
 
-@media (max-width:1150px) {
-  .content_left{
-    grid-template-columns: repeat(3 , 1fr);
+@media (max-width: 71.875rem) {
+  .content_left {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .footer_container{
-    grid-template-columns: repeat(2 , 1fr);
+  .footer_container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .third_block{
-    margin-top: 40px;
+  .third_block {
+    margin-top: 2.5rem;
   }
-  .quarter_block{
-    margin-top: 40px;
+  .quarter_block {
+    margin-top: 2.5rem;
   }
 }
-@media (max-width:900px) {
-  .container_menu{
+@media (max-width: 56.25rem) {
+  .container_menu {
     position: fixed;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 6.25rem);
     width: 100%;
-    top: 100px;
+    top: 6.25rem;
     left: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
-    transition: all .4s;
+    transition: all 0.4s;
     overflow: hidden;
   }
-  .visibal_menu{
+  .visibal_menu {
     left: 0;
   }
-  .menu{
+  .menu {
     display: flex;
     flex-direction: column;
     margin: 0;
   }
-  .content_left{
-    grid-template-columns: repeat(2 , 1fr);
+  .content_left {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .flex-left{
+  .flex-left {
     align-items: center;
   }
-  .menu_mobile{
+  .menu_mobile {
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1.375rem;
-    height: .875rem;
-    margin-right: 1.25rem;
+    width: 22px;
+    height: 14px;
+    margin-right: 20px;
   }
-  .menu_mobile span{
+  .menu_mobile span {
     display: block;
     width: 100%;
-    height: .125rem;
+    height: 2px;
     background-color: #0f0f0f;
   }
-  .container_header{
+  .container_header {
     padding-bottom: 0;
   }
 }
-@media (max-width:768px) {
-  .content_left{
+/* Product page */
+.product-container {
+  margin-top: 1.25rem;
+  display: flex;
+}
+
+.product-container {
+  margin-top: 3.125rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1.875rem;
+}
+.image-container img {
+  width: 100%;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.product-info h2 {
+  font-family: Rubik;
+  font-style: 1.375rem;
+  font-weight: 700;
+}
+
+.title-brend {
+  color: #444;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: .625rem;
+  margin-bottom: .625rem;
+ margin-left: 1.875rem;
+}
+.price {
+}
+.size-container {
+}
+.color {
+}
+.button-product {
+}
+
+@media (max-width: 48rem) {
+  .content_left {
     grid-template-columns: 1fr;
   }
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
   }
-  .sidebar{
+  .sidebar {
     width: 100%;
   }
-  aside h3{
+  aside h3 {
     text-align: center;
   }
 }
-@media (max-width:640px) {
-  .footer_container{
+@media (max-width: 40rem) {
+  .footer_container {
     grid-template-columns: 1fr;
   }
-  .footer_container .logo{
+  .footer_container .logo {
     margin: 0 auto;
   }
 }
