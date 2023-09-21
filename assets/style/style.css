@@ -26,7 +26,7 @@ a {
 .close {
   display: block;
   position: relative;
-  transform: translateY(0.1875rem);
+  transform: translateY(.1875rem);
 }
 .menu_mobile span {
   transition: all 0.4s;
@@ -101,7 +101,7 @@ header {
 }
 .card {
   position: relative;
-  padding: 0.125rem;
+  padding: .125rem;
   transition: all 0.4s;
   border-radius: 50%;
 }
@@ -165,7 +165,7 @@ aside h3 span {
   line-height: 1.35;
 }
 aside li {
-  margin: 0.625rem 0.625rem;
+  margin: .625rem .625rem;
 }
 aside li a {
   font-family: "Open Sans";
@@ -209,7 +209,10 @@ aside li span {
 }
 .cart-title {
   font-family: Montserrat;
-  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
   color: #0f0f0f;
   transition: all 0.4s;
   text-align: center;
@@ -250,14 +253,14 @@ footer {
   font-size: 1.125rem;
 }
 .footer_container ul {
-  margin-top: 0.625rem;
+  margin-top: .625rem;
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: .625rem;
 }
 .footer_container li {
   border: 1px solid white;
-  padding: 0.625rem 0.9375rem;
+  padding: .625rem .9375rem;
   transition: all 0.4s;
 }
 .footer_container li a {
@@ -281,11 +284,11 @@ footer {
   height: 9.375rem;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 0.9375rem;
+  margin-bottom: .9375rem;
 }
 .separator {
   width: 100%;
-  height: 0.0625rem;
+  height: .0625rem;
   background-color: white;
   margin-bottom: 1.25rem;
 }
@@ -299,7 +302,7 @@ footer {
   right: 1.4rem;
   display: flex;
   justify-content: center;
-  padding: 0.125rem;
+  padding: .125rem;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s;
@@ -385,11 +388,11 @@ footer {
 .product-info {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: .625rem;
 }
 .product-info h2 {
   font-family: Rubik;
-  font-style: 1.375rem;
+  font-style: 1.875rem;
   font-weight: 700;
 }
 
@@ -399,9 +402,20 @@ footer {
   font-size: 1.125rem;
   margin-top: .625rem;
   margin-bottom: .625rem;
- margin-left: 1.875rem;
+  margin-left: 1.875rem;
 }
 .price {
+  font-weight: 700;
+  font-family: Montserrat;
+  color: #f25862;
+  margin-top: 1.25rem;
+  font-size: 1.875rem;
+  text-shadow: .0625rem 1px 5px black;
+}
+.description_product{
+  font-family: Montserrat;
+  color: #444;
+  margin-top: 1.25rem;
 }
 .size-container {
 }
