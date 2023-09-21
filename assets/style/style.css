@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 ul {
   list-style-type: none;
@@ -15,10 +14,10 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1600px;
+  max-width: 100rem;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 /* Хедер */
 .menu_mobile {
@@ -27,7 +26,7 @@ a {
 .close {
   display: block;
   position: relative;
-  transform: translateY(.1875rem);
+  transform: translateY(3px);
 }
 .menu_mobile span {
   transition: all 0.4s;
@@ -49,38 +48,38 @@ a {
   overflow: hidden;
 }
 header {
-  max-width: 1600px;
+  max-width: 100rem;
   margin: 0 auto;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .flex-left {
   display: flex;
   justify-content: flex-end;
 }
 .container_header {
-  padding-top: 5px;
-  padding-bottom: 25px;
+  padding-top: 0.3125rem;
+  padding-bottom: 1.5625rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .container_logo {
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 100px;
+  height: 100px;
   background-image: url("../img/logo_obuv.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .container_menu {
-  width: calc(100% - 310px);
+  width: calc(100% - 19.375rem);
   display: flex;
   justify-content: flex-end;
 }
 .menu {
-  margin-right: 60px;
+  margin-right: 3.75rem;
   display: flex;
-  gap: 1.875rem;
+  gap: 30px;
 }
 .menu .active a {
   color: #f25862;
@@ -88,7 +87,7 @@ header {
 .menu a {
   cursor: pointer;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #444;
@@ -98,11 +97,11 @@ header {
   color: #f25862;
 }
 .card img {
-  width: 22px;
+  width: 1.375rem;
 }
 .card {
   position: relative;
-  padding: .125rem;
+  padding: 2px;
   transition: all 0.4s;
   border-radius: 50%;
 }
@@ -111,13 +110,13 @@ header {
 }
 .card span {
   position: absolute;
-  font-size: 14px;
+  font-size: 0.875rem;
   background-color: #616161;
   border-radius: 50%;
   color: white;
-  padding: 2px;
-  top: -8px;
-  left: 15px;
+  padding: 0.125rem;
+  top: -0.5rem;
+  left: 0.9375rem;
 }
 
 .breadcrumb ol {
@@ -126,11 +125,11 @@ header {
 }
 .breadcrumb a::after {
   content: ">";
-  margin: 5px;
+  margin: 0.3125rem;
   color: #999999;
 }
 .breadcrumb a {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Open Sans";
   color: #999999;
 }
@@ -144,20 +143,20 @@ header {
 /* Контент */
 
 .content {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
-  gap: 10px;
-  margin-bottom: 80px;
+  gap: 0.625rem;
+  margin-bottom: 5rem;
 }
 .sidebar {
-  width: 270px;
+  width: 16.875rem;
 }
 .content_left {
   width: 100%;
 }
 aside h3 {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
 }
 aside h3 span {
   color: #0f0f0f;
@@ -166,7 +165,7 @@ aside h3 span {
   line-height: 1.35;
 }
 aside li {
-  margin: .625rem .625rem;
+  margin: 10px 10px;
 }
 aside li a {
   font-family: "Open Sans";
@@ -174,7 +173,7 @@ aside li a {
   font-style: normal;
   color: #0f0f0f;
   transition: all 0.4s;
-  font-size: 16px;
+  font-size: 1rem;
 }
 aside li a:hover {
   color: #f25862;
@@ -185,17 +184,17 @@ aside li span {
 .content_left {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
+  gap: 20px;
 }
 .cart {
   cursor: pointer;
-  padding: 5px;
-  padding-bottom: 20px;
+  padding: 0.3125rem;
+  padding-bottom: 1.25rem;
   width: 100%;
   transition: all 0.2s;
 }
 .cart:hover {
-  box-shadow: 1px 1px 15px #6a6a6a;
+  box-shadow: 0.0625rem 0.0625rem 0.9375rem #6a6a6a;
 }
 
 .cart_photo {
@@ -210,10 +209,10 @@ aside li span {
 }
 .cart-title {
   font-family: Montserrat;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.9375rem;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #0f0f0f;
   transition: all 0.4s;
   text-align: center;
@@ -223,51 +222,51 @@ aside li span {
 }
 .cart_footer .price {
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 1rem;
   color: #f25862;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 .cart_footer strike {
   color: #999999;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 /* Футер */
 footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: #141414;
 }
 .footer_container {
   font-family: Montserrat;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }
 .footer_container h2 {
   color: white;
   font-family: Montserrat;
-  font-size: 1.375rem;
+  font-size: 22px;
 }
 .footer_container p {
   color: white;
   font-family: Montserrat;
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 .footer_container ul {
-  margin-top: .625rem;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: .625rem;
+  gap: 10px;
 }
 .footer_container li {
-  border: 1px solid white;
-  padding: .625rem .9375rem;
+  border: 0.0625rem solid white;
+  padding: 10px 15px;
   transition: all 0.4s;
 }
 .footer_container li a {
   width: 100%;
   height: 100%;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: white;
 
   transition: all 0.4s;
@@ -281,29 +280,29 @@ footer {
 
 .first_block .logo {
   background-image: url("../img/logo_obuv.svg");
-  width: 9.375rem;
-  height: 9.375rem;
+  width: 150px;
+  height: 150px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: .9375rem;
+  margin-bottom: 15px;
 }
 .separator {
   width: 100%;
-  height: .0625rem;
+  height: 1px;
   background-color: white;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .up_to_header {
   position: fixed;
   background-color: #141414;
-  width: 2.5rem;
-  height: 2.5rem;
-  bottom: 2.5rem;
-  right: 1.4rem;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 22.4px;
   display: flex;
   justify-content: center;
-  padding: .125rem;
+  padding: 2px;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s;
@@ -311,7 +310,7 @@ footer {
 }
 /* Общие стили */
 
-@media (max-width: 71.875rem) {
+@media (max-width: 1150px) {
   .content_left {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -319,18 +318,18 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .third_block {
-    margin-top: 2.5rem;
+    margin-top: 40px;
   }
   .quarter_block {
-    margin-top: 2.5rem;
+    margin-top: 40px;
   }
 }
-@media (max-width: 56.25rem) {
+@media (max-width: 900px) {
   .container_menu {
     position: fixed;
-    height: calc(100vh - 6.25rem);
+    height: calc(100vh - 100px);
     width: 100%;
-    top: 6.25rem;
+    top: 100px;
     left: 100%;
     background-color: white;
     display: flex;
@@ -357,14 +356,14 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22px;
-    height: 14px;
-    margin-right: 20px;
+    width: 1.375rem;
+    height: 0.875rem;
+    margin-right: 1.25rem;
   }
   .menu_mobile span {
     display: block;
     width: 100%;
-    height: 2px;
+    height: 0.125rem;
     background-color: #0f0f0f;
   }
   .container_header {
@@ -373,15 +372,15 @@ footer {
 }
 /* Product page */
 .product-container {
-  margin-top: 1.25rem;
+  margin-top: 20px;
   display: flex;
 }
 
 .product-container {
-  margin-top: 3.125rem;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  gap: 1.875rem;
+  gap: 30px;
 }
 .image-container img {
   width: 100%;
@@ -389,43 +388,61 @@ footer {
 .product-info {
   display: flex;
   flex-direction: column;
-  gap: .625rem;
+  gap: 10px;
 }
 .product-info h2 {
   font-family: Rubik;
-  font-style: 1.875rem;
+  font-style: 30px;
   font-weight: 700;
 }
 
 .title-brend {
   color: #444;
   font-weight: 600;
-  font-size: 1.125rem;
-  margin-top: .625rem;
-  margin-bottom: .625rem;
-  margin-left: 1.875rem;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
 .price {
   font-weight: 700;
   font-family: Montserrat;
   color: #f25862;
-  margin-top: 1.25rem;
-  font-size: 1.875rem;
-  text-shadow: .0625rem 1px 5px black;
+  margin-top: 20px;
+  font-size: 30px;
+  text-shadow: 1px 0.0625rem 0.3125rem black;
 }
-.description_product{
+.description_product {
   font-family: Montserrat;
   color: #444;
-  margin-top: 1.25rem;
+  margin-top: 20px;
 }
 .size-container {
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.size-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+width: auto;
+  display: block;
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #444;
+  border: 1px solid #444;
 }
 .color {
 }
 .button-product {
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .content_left {
     grid-template-columns: 1fr;
   }
@@ -440,7 +457,7 @@ footer {
     text-align: center;
   }
 }
-@media (max-width: 40rem) {
+@media (max-width: 640px) {
   .footer_container {
     grid-template-columns: 1fr;
   }
