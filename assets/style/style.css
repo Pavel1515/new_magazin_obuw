@@ -479,11 +479,12 @@ h3{
   color: #1a9416;
   background-color: transparent;
 }
-
-@media (max-width: 48rem) {
+@media (max-width: 68rem){
   .product-container{
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 48rem) {
   .content_left {
     grid-template-columns: 1fr;
   }
