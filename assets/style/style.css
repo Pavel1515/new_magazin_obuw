@@ -481,6 +481,9 @@ h3{
 }
 
 @media (max-width: 48rem) {
+  .product-container{
+    grid-template-columns: 1fr;
+  }
   .content_left {
     grid-template-columns: 1fr;
   }
